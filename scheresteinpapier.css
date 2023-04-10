@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 10px;
+}
+
+#ergebnis {
+    font-size: 2em;
+    margin: 10px;
+}
+
+#reset {
+    font-size: 2em;
+    margin: 10px;
+}

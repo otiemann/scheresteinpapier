@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schere, Stein, Papier mit JavaScript</title>
+    <link href="scheresteinpapier.css" rel="stylesheet">
+    <script src="scheresteinpapier.js"></script>
+    <script>
+    </script>
+</head>
+<body onload="document.getElementById('ergebnis').innerHTML = 'Gewonnen: ' + points.wins + '<br>' + 'Verloren: ' + points.losses + '<br>' + 'Unentschieden: ' + points.ties";>
+    <h1>Schere, Stein, Papier mit JavaScript</h1>
+    <button onclick="calculateResult('schere', playComputer());"><img src="scissors-emoji.png"></button>
+    
+    <button onclick="calculateResult('stein', playComputer());"><img src="rock-emoji.png"></button>
+    
+    <button onclick="calculateResult('papier', playComputer());"><img src="paper-emoji.png"></button>
+
+    <br>
+
+    <button id="reset" onclick="resetScore();">&#10060 Score zurücksetzen</button>
+
+    <div id="ergebnis"></div>
+</body>
+</html>
